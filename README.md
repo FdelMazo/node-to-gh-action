@@ -1,0 +1,17 @@
+```yaml
+name: Build & Deploy to Github Pages
+
+on:
+  push:
+    branches: [master]
+
+# Don't forget to set up the github pages to point to the `gh-pages` branch!
+
+jobs:
+  node-to-gh:
+    runs-on: ubuntu-latest
+    name: Build & Deploy to Github Pages
+    steps:
+      - id: node-to-gh
+        uses: fdelmazo/node-to-gh-action@v1
+```
