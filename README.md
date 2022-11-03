@@ -3,7 +3,7 @@ name: Build & Deploy to Github Pages
 
 on:
   push:
-    branches: [master]
+    branches: [master, main]
 
 # Don't forget to set up the github pages to point to the `gh-pages` branch!
 
