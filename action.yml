@@ -3,8 +3,8 @@ description: 'Build & Deploy a Node.js app to Github Pages'
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v2
-    - uses: actions/cache@v2
+    - uses: actions/checkout@v3
+    - uses: actions/cache@v3
       with:
         path: |
           ./node_modules
